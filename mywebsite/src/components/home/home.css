@@ -1,0 +1,131 @@
+  /* Home Section */
+#home {
+  width: 100%;
+  min-height: calc(100vh - 120px); /* Full viewport minus Nav + Footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  padding-top: 70px;   /* 👈 Added so content won’t overlap with fixed navbar */
+  background-color: #1e1e1e; /* same bg as project section */
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1000px;
+  background: #282828;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Intro Section */
+.intro {
+  color: white;
+  text-align: left;
+}
+
+.hello {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+
+.name span {
+  color: #4ade80; /* green */
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.8rem;
+  color: #facc15; /* yellow */
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Skills Section */
+.skills {
+  background: #2e2d2d;
+  border-radius: 8px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  margin: 0 25px;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.marquee span:hover {
+  color: #4ade80;
+  cursor: pointer;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* About Section */
+.about {
+  background: #2e2d2d;
+  border-radius: 12px;
+  padding: 30px;
+  color: #d1d5db;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about:hover {
+  transform: scale(1.02);
+}
+
+.about h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.highlight-green { color: #4ade80; font-weight: 600; }
+.highlight-blue { color: #3b82f6; font-weight: 600; }
+.highlight-yellow { color: #facc15; font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .intro, .about {
+    text-align: center;
+  }
+
+  .hello { font-size: 1.6rem; }
+  .name { font-size: 1.8rem; }
+  .role { font-size: 1.4rem; }
+}

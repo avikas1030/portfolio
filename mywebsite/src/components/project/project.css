@@ -1,0 +1,109 @@
+/* Projects Section Wrapper */
+#projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+/* Main container */
+.projects-container {
+  background: #282828;
+  width: 100%;
+  max-width: 70%;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.project-card {
+  background: #2e2d2d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+/* Image */
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Content */
+.project-content {
+  padding: 1rem;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #d1d5db; /* gray-300 */
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.project-btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-btn.green {
+  background: #22c55e;
+  color: white;
+}
+
+.project-btn.green:hover {
+  background: #16a34a;
+}
+
+.project-btn.yellow {
+  background: #facc15;
+  color: black;
+}
+
+.project-btn.yellow:hover {
+  background: #eab308;
+}

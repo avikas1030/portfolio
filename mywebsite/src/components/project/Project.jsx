@@ -9,7 +9,7 @@ const Project = () => {
 
         {/* Projects Grid */}
         <div className="projects-grid">
-          {/* Project 1 */}
+          {/* Airbnb project */}
           <div className="project-card">
             <img
               src="/airbnb.png"
@@ -31,6 +31,7 @@ const Project = () => {
               </a>
             </div>
           </div>
+          {/* Todo Web */}
           <div className="project-card">
             <img
               src="/todo.jpg"
@@ -52,7 +53,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-          {/* project 2 */}
+          {/* UI/UX project */}
           <div className="project-card">
             <img
               src="/empireblue.png"
@@ -60,33 +61,31 @@ const Project = () => {
               className="project-image"
             />
             <div className="project-content">
-              <h2 className="project-name">Project One</h2>
+              <h2 className="project-name">Empire Blue – Modern UI Experience</h2>
               <p className="project-description">
-                A brief description of the project goes here. You can talk about
-                the tech stack and features used in this project.
+                A visually appealing frontend project built to demonstrate elegant UI design and seamless user interaction using modern web technologies.
               </p>
               <a
                 href="https://empire-inky.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-btn green"
+                className="project-btn yellow"
               >
                 View Live
               </a>
             </div>
           </div>
-          {/* Project 3 */}
+          {/* JSON Builder project */}
           <div className="project-card">
             <img
-              src="/jsonSchema.png"
+              src="/json.jpg"
               alt="JSON Schema Project"
               className="project-image"
             />
             <div className="project-content">
-              <h2 className="project-name">Project Two</h2>
+              <h2 className="project-name">JSON Schema Builder</h2>
               <p className="project-description">
-                Another short description for the project. Highlight what makes
-                it unique and the technologies you worked with.
+                 A React and Ant Design-based tool to build and visualize JSON schemas interactively, featuring a responsive interface and fast performance powered by Vite.
               </p>
               <a
                 href="https://json-builder-schema.vercel.app/"

@@ -17,13 +17,33 @@ const Project = () => {
               className="project-image"
             />
             <div className="project-content">
-              <h2 className="project-name">Project One</h2>
+              <h2 className="project-name">Book Your Room (Airbnb)</h2>
               <p className="project-description">
-                A brief description of the project goes here. You can talk about
-                the tech stack and features used in this project.
+                A full-stack Airbnb clone with user login, property listings, and booking features — built using modern frontend and backend technologies.
               </p>
               <a
-                href="https://airbnb-zdg1.onrender.com/"
+                href="https://bookyourroom-frontend.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-btn green"
+              >
+                View Live
+              </a>
+            </div>
+          </div>
+          <div className="project-card">
+            <img
+              src="/todo.jpg"
+              alt="Todo Project"
+              className="project-image"
+            />
+            <div className="project-content">
+              <h2 className="project-name">TaskFlow – Smart ToDo Web App</h2>
+              <p className="project-description">
+                A MERN-based ToDo web app where users can register, log in, and manage their tasks seamlessly. Data is stored securely in MongoDB with full CRUD functionality.
+              </p>
+              <a
+                href="https://prime-ai-frontend.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-btn green"
